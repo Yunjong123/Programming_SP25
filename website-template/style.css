@@ -1,0 +1,249 @@
+#box1 {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    position: absolute;
+    left: 900px;
+    top: 50px;
+    transition: all 1s;
+}
+
+#box1:hover {
+    background: skyblue;
+    transform: skewX(45deg) scaleY(0.9);
+}
+
+#box2 {
+    width: 120px;
+    height: 120px;
+    background: purple;
+    color: white;
+    font-size: 7rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 870px;
+    top: 600px;
+    animation: shake 3s infinite alternate;
+    transition: background 0.5s ease-in-out;
+    justify-content: center;
+}
+
+#box2:hover {
+    background: pink;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0px); }
+}
+#box3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: magenta;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 550px;
+    top: 800px;
+    transition: transform 1s;
+    justify-content: center;
+    font-size: 200px;
+}
+
+#box3:hover {
+    transform: rotate(360deg);
+}
+
+#box4 {
+    width: 300px;
+    height: 300px;
+    background: blue;
+    margin: 150px;
+    animation: ani 2s linear infinite normal;
+}
+
+#box5 {
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+    background: red;
+    animation: ani 2s ease 5 alternate;
+}
+
+
+
+@keyframes ani {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#box6 {
+    width: 200px;
+    height: 200px;
+    margin: 200px;
+    background: blue;
+    position: relative;
+    animation-name: ani2;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes ani2 {
+    0% {
+        background: blue;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background: yellowgreen;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background: red;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background: black;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background: orangered;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+
+#box7 {
+    width: 150px;
+    height: 150px;
+    margin: 400px 250px;
+    background: red;
+    position: relative;
+    animation-name: ani3;
+    animation-duration: 3s;
+    animation-direction: linear;
+}
+
+
+@keyframes ani3 {
+    from {
+        top: 0px;
+        background: red;
+    }
+
+    to {
+        top: 300px;
+        background: blue;
+    }
+}
+
+#box8 {
+    width: 0;
+    height: 0;
+    position: relative;
+    margin: 200px;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 220px solid blue;
+    animation-name: ani4;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes ani4 {
+    0% {
+        border-bottom-color: blue;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        border-bottom-color: yellowgreen;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        border-bottom-color: red;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        border-bottom-color: black;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        border-bottom-color: orangered;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+
+#box9 {
+     width: 100px;
+    height: 100px;
+    background: lightgreen;
+    border-radius: 50%;
+    position: absolute;
+    left: 800px;
+    top: 1050px;
+    animation: ani5 3s infinite alternate ease-in-out;
+}
+    
+@keyframes ani5 {
+    0% {
+        border-radius: 50%; 
+        background-color: lightgreen; 
+        transform: scaleX(1); 
+    }
+    50% {
+    border-radius: 50% 50% 45% 45%;
+    background-color: green; 
+    transform: scaleX(1.2); 
+    }
+    100% {
+    border-radius: 50%; 
+    background-color: lightgreen;
+    transform: scaleX(1);
+}
+
+
+
+
+}
