@@ -1,0 +1,140 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat fixed center;
+    background-size: cover;
+    color: white;
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.news {
+    width: 60%;
+}
+
+article {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+article h2 {
+    margin: 0;
+    color: #ffcc00;
+    font-size: 1.8em;
+}
+
+article h3 {
+    color: #ffa500;
+    font-size: 1.4em;
+}
+
+article p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: white;
+}
+
+
+article a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+aside {
+    width: 30%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+aside h3 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.85);
+    font-size: 0.9em;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+article {
+    animation: fadeIn 1s ease-in-out;
+}
+
+body {
+    background: url('https://cdn-imgix.headout.com/mircobrands-content/image/ef7db06951f6a999038978acd5804755-pexels-pixabay-51343.jpg') 
+                no-repeat fixed center;
+    background-size: cover;
+}
