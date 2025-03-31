@@ -5,7 +5,7 @@ body {
   padding: 0;
   color: #ffffff;
   background: url('../Assignment6/assignment6_image.jpeg') no-repeat center center fixed;
-  background-size: center;
+  background-size: cover;
 }
   #container {
     padding: 1rem;
