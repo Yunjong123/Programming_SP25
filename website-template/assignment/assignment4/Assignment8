@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blossom Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+  <header>
+    <h1>Welcome to My Blossom</h1>
+  </header>
+
+  <!-- 초기 콘텐츠 -->
+  <main>
+    <p id="main-content">"Creativity is intelligence having fun." — Albert Einstein</p>
+
+    <!-- 버튼들 -->
+    <div class="buttons">
+      <button id="showText">Show Text</button>
+      <button id="showImage">Show Image</button>
+      <button id="showVideo">Show Video</button>
+    </div>
+
+    <!-- 숨겨진 콘텐츠들 -->
+    <section id="hiddenText"><p>This is my own hidden story unfolding...</p></section>
+
+    <figure id="hiddenImage">
+      <img src="my-image.jpg" alt="My photo">
+      <figcaption>This is my original image.</figcaption>
+    </figure>
+
+    <figure id="hiddenVideo" class="responsive">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </figure>
+
+  </main>
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#hiddenText, #hiddenImage, #hiddenVideo").hide();
+
+    $("#showText").click(function() {
+      $("#hiddenText").toggle();
+    });
+
+    $("#showImage").click(function() {
+      $("#hiddenImage").toggle();
+    });
+
+    $("#showVideo").click(function() {
+      $("#hiddenVideo").toggle();
+    });
+  });
+</script>
+</body>
+</html>

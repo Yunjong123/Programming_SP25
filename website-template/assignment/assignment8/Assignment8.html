@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eclipse Dom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="container">
+  <header>
+    <h1>Eclipse Dom</h1>
+  </header>
+
+  <main>
+    <div class="buttons">
+      <button id="TextButton">Text</button>
+      <button id="ImageButton">Logo</button>
+      <button id="VideoButton">Video</button>
+    </div>
+
+    <section id="hiddenText">
+      <p>
+        Their headquarters, known as <strong>The Dom</strong>, is a massive subterranean structure shielded from detection. 
+        Built with advanced technology far beyond what the world knows, it serves as the central hub for Eclipse Dom’s operations. 
+        Presidents, monarchs, and world leaders unknowingly act according to their will, their policies mere reflections of 
+        preordained decisions made within The Dom.
+      </p>
+    </section>
+
+    <figure id="hiddenImage">
+      <img src="assat logo.webp" alt="Eclipse Dom Symbol">
+      <figcaption>original symbol of Eclipse Dom.</figcaption>
+    </figure>
+
+    <figure id="hiddenVideo" class="responsive">
+      <iframe src="https://www.youtube.com/embed/ZaNvoO7TTqU" frameborder="0" allowfullscreen></iframe>
+    </figure>
+  </main>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#hiddenText, #hiddenImage, #hiddenVideo").hide();
+
+    $("#TextButton").click(function () {
+      $("#hiddenText").slideToggle(); 
+    });
+
+    $("#ImageButton").click(function () {
+      $("#hiddenImage").slideToggle();
+    });
+
+    $("#VideoButton").click(function () {
+      $("#hiddenVideo").slideToggle();
+    });
+  });
+</script>
+</body>
+</html>
