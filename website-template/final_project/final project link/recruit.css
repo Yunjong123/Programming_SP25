@@ -1,0 +1,72 @@
+.recruit-section {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: 'Jaldi', sans-serif;
+  color: #111;
+}
+
+.recruit-section .title {
+  font-family: 'Jacques Francois', serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.recruit-subtitle {
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.recruit-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px 20px;
+}
+
+.recruit-form label {
+  font-weight: bold;
+  align-self: center;
+  font-size: 16px;
+}
+
+.recruit-form input,
+.recruit-form textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: #e6e6e6;
+  font-family: 'Jaldi', sans-serif;
+}
+
+.recruit-form textarea {
+  grid-column: 2 / 3;
+}
+
+.recruit-form button {
+  grid-column: 2 / 3;
+  justify-self: end;
+  padding: 8px 16px;
+  background-color: darkgray;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.recruit-form button:hover {
+  background-color: #2c5580;
+}
+
+.recruit-last {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'EB Garamond', serif;
+  color: black;
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+}

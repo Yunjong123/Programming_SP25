@@ -1,0 +1,54 @@
+.research-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 40px;
+  font-family: 'Jaldi', sans-serif;
+  color: #111;
+}
+
+.research-text {
+  flex: 1;
+}
+
+.research-text h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Jacques Francois', serif;
+}
+
+.research-text h3 {
+  font-size: 20px;
+  margin: 30px 0 10px;
+}
+
+.research-text p,
+.research-text ul {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.research-text ul {
+  padding-left: 20px;
+}
+
+.research-text li {
+  margin-bottom: 10px;
+}
+
+.research-image {
+  flex: 0 0 300px;
+}
+
+.research-image img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.research-image figcaption {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
